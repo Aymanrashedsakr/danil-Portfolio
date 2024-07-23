@@ -1,0 +1,516 @@
+*{
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+:root{
+    --mainColor: #343434;
+    --d-transition: .5s;
+    --main-font: "Poppins", sans-serif;
+    --sec-font: "Montserrat", sans-serif;
+    --bg-section: #f7f7f7;
+}
+body{
+    font-family: var(--main-font);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--sec-font)
+}
+
+.main-color {
+    color: var(--mainColor);
+  }
+
+ p {
+    color: #748182;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+
+a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  /*main butten */
+.btn-main {
+    font-size: 13px;
+    padding: 10px 30px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1c1c1c;
+    --bs-btn-border-color: #1c1c1c;
+    --bs-btn-hover-color: #1c1c1c;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #1c1c1c;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1c1c1c;
+    --bs-btn-active-border-color: #fff;
+    
+  }
+  /*  second btn*/
+  .btn-sec {
+    font-size: 13px;
+    padding: 10px 30px;
+    --bs-btn-color: #1c1c1c;
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: #1c1c1c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1c1c1c;
+    --bs-btn-hover-border-color: #1c1c1c;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1c1c1c;
+    --bs-btn-active-border-color: #fff;
+    font-weight: bold;
+
+    
+  }
+
+  /* ايكونز السوشيال ال ف الكاردات */
+  .btn-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 13px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1c1c1c;
+    --bs-btn-border-color: #1c1c1c;
+    --bs-btn-hover-color: #1c1c1c;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #1c1c1c;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1c1c1c;
+    --bs-btn-active-border-color: #fff;
+  }
+
+  .section-padding {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  .fit-content {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+ 
+  
+
+  .main-title {
+    margin-bottom: 80px;
+  }
+
+  .main-title h3 {
+    position: relative;
+    margin: 0;
+    /* z-index: 1; */
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+
+  .main-title h3::after {
+    content: "";
+    width: 100%;
+    height: 30%;
+    background-image: url("../imgs/imgs/dots.png");
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    right: 100%;
+    opacity: 0;
+    background-color:blue;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+
+.nav-link:hover::after {
+  opacity: 1;
+    right: 20%;
+}
+
+
+
+
+#Home {
+    background-image:url(../imgs/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#Home .layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.home  h2{
+    font-size: 2rem;
+    
+}
+.home h2:after{
+    content: '';
+    animation: words 8s infinite alternate;
+}
+@keyframes words{
+    0% {content: "|";}
+    3% {content: "a|";}
+    5% {content: "ay|";}
+    7% {content: "aym|";}
+    10% {content: "ayma|";}
+    13% {content: "ayman r|";}
+    15% {content: "ayman ra|";}
+    17% {content: "ayman ra|";}
+    20% {content: "ayman ras|";}
+    24% {content: "ayman rash|";}
+    25% {content: "ayman rashe|";}
+    27% {content: "ayman rashed|";}
+    30% {content: "ayman rashed|";}
+    32% {content: "ayman rashe|";}
+    35% {content: "ayman rashed|";}
+    37% {content: "ayman rashed|";}
+    40% {content: "ayman rashed|";}
+    42% {content: "ayman rashed|";}
+    45% {content: "ayman rashed|";}
+    47% {content: "ayman rashed|";}
+    50% {content: "De|";}
+    52% {content: "Des|";}
+    55% {content: "Desi|";}
+    57% {content: "Desig|";}
+    60% {content: "Design|";}
+    62% {content: "Designe|";}
+    65% {content: "Designer|";}
+    67% {content: "Designer|";}
+    70% {content: "Designe|";}
+    72% {content: "Design|";}
+    75% {content: "Desig|";}
+    77% {content: "Desi|";}
+    80% {content: "Des|";}
+    82% {content: "De|";}
+    85% {content: "Dev|";}
+    87% {content: "Deve|";}
+    90% {content: "Devel|";}
+    92% {content: "Develo|";}
+    95% {content: "Develop|";}
+    97% {content: "Develope|";}
+    100% {content: "Developer|";}
+  }
+#Home .icon i{
+    color:white;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+/* start homeee */
+
+
+
+/* start about */
+
+.about .img-box {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .about .img-box::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: 80%;
+    background-image: url("/imgs/imgs/dots.png");
+    background-repeat: repeat;
+    left: 0px;
+    bottom: -30px;
+  }  
+
+  .about .about-content h3 {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+.about .s-title {
+    color: #999999;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+
+/* start serivces */
+
+ .services-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    transition: all .5s;
+}
+.services-icon i{
+    font-size: 40px;
+    color: black;
+    transition: all .5s;
+}
+.service-box:hover .services-icon{
+    background-color: black;
+}
+.service-box:hover i{
+    color:white ;
+    
+}
+.service-box {
+    -webkit-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* start work */
+
+
+.work .layer{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all .5s ;
+    
+
+}
+#Work .item:hover .layer{
+    opacity: 1;
+}
+  .layer.icons i {
+    color:white;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #111;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* client start */
+
+  .clients-contant img{
+    width: 90px;
+    height: 90px;
+  }
+  .image-content h6{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .image-content p{
+    font-size: 15px;
+    color: #748182;
+  }
+  .image-content span{
+    font-size: 8px;
+    font-weight: 600;
+    color: #888;
+  }
+
+  .carousel-indicators button {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background: #d6d6d6 !important;
+    position: relative !important;
+    top: 60px !important;
+    margin-top: 20px;
+}
+
+/* start experience */
+
+.experience-content h3{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.experience-content p{
+    font-size: 15px;
+    color: #748182;
+}
+.experience-icon i{
+    font-size: 30px;
+}
+
+
+/* start team */
+.team .card {
+    background-color: rgba(52, 52, 52, 0.8);
+    color: #fff;
+    margin-bottom: 10px;
+    border: transparent;
+    --bs-border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+  .team .btn-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+   .team .member-img {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .team .member-img img {
+        transition: transform 500ms ease-in-out;
+      }
+      .team .member-img:hover img {
+        transform: scale(1.2);
+      }
+
+      .team .layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition: 500ms;
+        transform: rotateY(180deg) scale(0.5, 0.5);
+        opacity: 0;
+      }
+
+      .team .card:hover .layer {
+        opacity: 1;
+        transform: rotateY(0deg) scale(1, 1);
+        cursor: pointer;
+      }
+      
+      .team .card-body {
+        padding: 25px;
+      }
+      
+      .team .card-body h4 {
+        margin-bottom: 5px;
+        font-size: 25px;
+      }
+
+
+
+
+/* start contact */
+
+.contact {
+    padding-block: 100px;
+  }
+  
+  .contact .box span {
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: color var(--d-transition) ease-in-out; 
+      transition:  background-color var(--d-transition) ease-in-out;
+  }
+  
+  .contact .box:hover span {
+    color: #fff;
+    background-color: var(--mainColor);
+  }
+  
+  .contact .box h6 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .area {
+    max-width: 200px;
+  }
+  
+  .contact .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 14px;
+    font-weight: 400;
+    --bs-body-color: #748182;
+    --bs-body-bg: #f4f4f4;
+    border: 0;
+  }
+  
+  .contact .form-control:focus {
+    outline: 0;
+    box-shadow: unset;
+  }
+  
+  .contact textarea {
+    max-height: 200px;
+    min-height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .contact .btn-main {
+    padding: 10px 40px;
+  }
+
+/* start footer */
+footer{
+    background: #1c1c1c;
+}
+footer p{
+    color: #748182;
+}
+
+
+@media (min-width=450px) {
+  section{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #f4f4f4;
+    transition: background var(--d-transition) ease-in-out;
+    background: linear-gradient(to right, #f4f4f4, #e6e6e6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+}
